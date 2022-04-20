@@ -1,0 +1,25 @@
+.webkit-c {
+    text-align: webkit-center;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.link {
+    color: -webkit-link;
+    text-decoration: underline;
+}
+
+.main {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 70vh;
+    width: 100vw;
+}
+
+.icons {
+    padding: 20px;
+
+}

@@ -1,0 +1,17 @@
+.card {
+    margin-top: 10px;
+}
+
+.endDisplay {
+    float: right;
+}
+
+.card-s {
+    border-radius: 0.25rem;
+    border-width: thin;
+}
+
+.link {
+    color: -webkit-link;
+    text-decoration: underline;
+}

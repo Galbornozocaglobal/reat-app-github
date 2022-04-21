@@ -28,9 +28,12 @@ export const HomeScreen = () => {
   const { searchText } = formValues;
   localStorage.setItem('lastPath', location.search)
 
-  useMemo(() => { formValues.searchText = name; setPage(1) }, [name])
-
-
+  useMemo(() => { 
+    formValues.searchText = name; 
+    setPage(1);
+  }, [name])
+  
+  
   useEffect(() => {
     async function check() {
       if (name && name.trim().length > 0) {
@@ -54,11 +57,12 @@ export const HomeScreen = () => {
 
     }
     check();
-  }, [name, parseInt(page)]);
+  }, [name, page]);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    navigate(`?name=${searchText}&pages=${parseInt(page)}`)
+    setPage(1);
+    navigate(`?name=${searchText}&pages=${parseInt(1)}`)
     setHistoric([...historic, searchText]);
   }
 

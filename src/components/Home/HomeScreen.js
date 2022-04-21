@@ -45,6 +45,8 @@ export const HomeScreen = () => {
           setCountResult(result.total_count);
           setError(false);
         } else {
+          setUsers([]);
+          setCountResult(0);
           setError(true);
         }
         setLoading(false);

@@ -12,7 +12,7 @@ export const DashboardRoutes = () => {
             <div>
                 <Routes>
                     <Route path="perfil/:user_name" element={<Perfil />} />
-                    <Route path="/*" element={<HomeScreen />} />
+                    <Route path="*" element={<HomeScreen />} />
                 </Routes>
             </div>
         </>
